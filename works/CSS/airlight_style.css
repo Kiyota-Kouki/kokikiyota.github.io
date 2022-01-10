@@ -1,0 +1,136 @@
+/* common */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  color: #333;
+  width: 50vw;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+a {
+  color: #222;
+  text-decoration:none;
+}
+
+img {
+  vertical-align: bottom;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.ja {
+  font-size: 70%;
+}
+
+
+/* header */
+
+/* menu */
+header .menu p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-left: 2em;
+}
+
+/* Koki Kiyota */
+header p:first-child {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+header .menu {
+  display: flex;
+  justify-content: end;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+/* main */
+
+main p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+main .title {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+main .title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgb(133, 133, 133);
+}
+
+main .title p {
+  color: rgb(133, 133, 133);;
+}
+
+main .text {
+  margin-top: 4rem;
+}
+
+main .text h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+main .text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+main p {
+  font-weight: 100;
+  line-height: 3rem;
+}
+
+main .img {
+  text-align: center;
+}
+
+@media(max-width:900px) {
+  html {
+    font-size: 30%;
+  }
+  body {
+    width: 85vw;
+  }
+  main .title h1 {
+    width: 100%;
+  }
+  main .title .date {
+    display: inline-block;
+  }
+}
+
+/* footer */
+footer {
+  margin-top: 12rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #aaa;
+}

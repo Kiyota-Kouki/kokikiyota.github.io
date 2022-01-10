@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="CSS/jamlight_style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&=swap">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <title>JAMLIGHT</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="menu">
+      <p><a href="../index.html">Koki Kiyota</a></p>
+      <p><a href="../about/about.html">About</a></p>
+      <p><a href="../index.html">Works</a></p>
+    </div>
+  </header>
+  
+  <main>
+    <div class="title">
+      <h1>JAMLIGHT　<span class="ja">演者が操作可能な照明演出システム 【修士研究】　　</span><span class="date">2021.04 ~</span></h1>
+      <p>Tools : TouchDesigner / Teachable Machine / Python / JavaScript / Illustrator / Photoshop / Premiere</p>
+    </div>
+
+    <div class="img">
+      <img
+        src="images/JAMLIGHT_main.jpg"
+        width="100%"
+        height="auto";>
+    </div>
+
+    <h2>タップダンスの音をセンシングしてリアルタイムに照明制御</h2>
+    <p>タップダンスの音をセンシングすることで即興パフォーマンスにも対応した照明演出を実現した。このシステムによってパフォーマンス内容に沿った照明演出を可能とし、よりクオリティの高いショーを提供することができる。</p>
+
+    <div class="mainmov">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/GoEYoCdCMro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div class="pic">
+      <img src="images/jam_1.jpg">
+      <img src="images/jam_2.jpg">
+    </div>
+
+    <hr>
+
+    <div class="background">
+      <h1>Background</h1>
+      <h2>ジャムとは？</h2>
+      <p>本格的な準備や、予め用意しておいた楽譜にとらわれずに、ミュージシャン達が集まって即興的に演奏をすること。</p>
+      <div class="ex">
+        <img
+          src="images/jam_ex_1.jpg"
+          width="100%"
+          height="auto">
+        <img
+          src="images/jam_ex_2.jpg"
+          width="100%"
+          height="auto">
+      </div>
+
+      <h2>照明演出の必要性</h2>
+      <p>照明はただ演者を照らすだけではありません。パフォーマンスの雰囲気を照明が作り出したり、パフォーマンスの内容に合わせてピンスポットになったり点滅したりして、パフォーマンスの魅力を最大限引き立てることができます。</p>
+
+      <div class="stagelight">
+        <img
+          src="images/stagelight_1.jpg"
+          width="100%"
+          height="auto">
+        <img
+          src="images/stagelight_2.jpg"
+          width="100%"
+          height="auto">
+        <img
+          src="images/stagelight_3.jpg"
+          width="100%"
+          height="auto">
+      </div>
+
+      <h2>ジャムに対して効果的な照明演出をしたい！</h2>
+      <p>ジャムの照明演出では、事前にどのようなパフォーマンスになるか予測できないことから<span>変化がない演出</span>や当たり障りのない<span>ランダムな演出</span>になることが多くなってしまいます。ジャムでもパフォーマンス内容に沿った効果的な演出が実現できたらよりクオリティの高いショーになるのではないか、そういった思いでこの研究をスタートしました。</p>
+
+    </div>
+
+    <hr>
+
+    <div class="approach">
+      <h1>Approach</h1>
+      <h2>タップダンスによる照明制御</h2>
+      <p>つま先とかかとに金属板のあるタップシューズを用い、リズム良く床を叩いて音を鳴らすタップダンス。<span>音</span>と<span>振動</span>を絶え間なく発生させるタップダンスの特性はセンシングの安定性につながると考えました。</p>
+      <h2>センシング要素</h2>
+
+      <ul>
+        <li><span>音の強弱</span></li>
+        <li>床の振動</li>
+        <li><span>ステップの種類</span></li>
+        <li>リズム</li>
+        <li>テンポ</li>
+        <li>足の位置</li>
+      </ul>
+      <p>タップダンスの音量が大きいと光量が強く、音量が小さいと光量は弱く、というのは感覚的にもイメージしやすい。そのため、タップダンスの音量で照明の光量を制御する。さらに特定のステップの検出によって複雑な演出を加えていきます。</p>
+      <div class="item_text">
+        <h2>使用アイテム</h2>
+        <p>ムービングヘッドは、ADJのInno Pocket Z4を使用する。光量やカラー、照射方向、照射半径などをコントロール、タップダンスを行う環境は、金属板のある通常のタップシューズを履いて90cm四方の木製パネルの上でパフォーマンスを行います。</p>
+      </div>
+
+      <div class="items">
+        <img
+          src="images/light.jpg"
+          width="100%"
+          height="auto";>
+        <img
+          src="images/shoes.jpg"
+          width="100%"
+          height="auto";>
+        <img
+          src="images/board.jpg"
+          width="100%"
+          height="auto";>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <hr>
+    <div class="system">
+      <h1>System</h1>
+      <h2>TouchDesignerとTeachable Machineで実装</h2>
+      <p>照明の制御にはTouchDesignerを使用、ステップの検出にはGoogleが提供しているAIの機械学習ツールであるTeachable Machineを使用します。Teachable Machineの学習結果をWebSocket通信で常にTouchDesignerに送り続け、 DMX通信でムービングヘッドを制御します。</p>
+    </div>
+
+    <img
+      src="images/jamlight_system.png"
+      width="100%"
+      height="auto";>
+    
+    <hr>
+
+    <div class="point">
+      <h1>Point</h1>
+      <h2>音量変換</h2>
+      <ul>
+        <li>TouchDesignerで音を取得し時間軸と音量のグラフに変換。タップダンスの床を叩く音は瞬間的なもので、単純に音量で光量をコントロールするとストロボのような騒がしい演出になってしまいます。そのため、大きな音を取得した際に滑らかに下がるように長めにエンベロープをかけて残響音を彷彿とさせる空気感のある演出にしました。</li>
+      </ul>
+      <h2>機械学習</h2>
+      <ul>
+        <li>シューズで床を叩くことで音を出すタップダンスは音のバリエーションが少なく、また、異なるステップでも音が似てしまうことが多々あります。そのため、照明をコントロールするステップは音色が異なる2つのステップに留めて誤認識を可能な限り低くしました。</li>
+        <li>音が連続して発生する中で特定のステップを検出することは容易ではありません。そのため現段階では、演者はステップが目立つように、意識して多少の時間を空けてステップを実行し照明をコントロールしました。</li>
+      </ul>
+    </div>
+
+    <hr>
+
+
+
+    
+    <h1>ステップと照明演出</h1>
+    
+    <div class="beside">
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/_Ao6f8Wfbj0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/FcrPt8ObqRg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/SlBElEdhLoQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="video">
+        <iframe src="https://www.youtube.com/embed/CPKtTiBTQMg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="future">
+      <h1>Future work</h1>
+      <h2>振動や骨格検出での制御も視野に</h2>
+      <p>音での制御は、音質の違いが聞き分けられなかったり、パフォーマンス環境によってステップが検出できなくなってしまうことが考えられます。そこで、環境に左右されない振動や骨格検出での制御を検討。振動を検出する場合、複数個の振動センサを用いて左右どちらの足で叩いたかを検出できることが想定され、演出のバリエーションの増加が期待できます。</p>
+      <h2>他のパフォーマンスにも流用</h2>
+      <p>本研究ではパフォーマンスはタップダンスに限定していますが、今後はその他のパフォーマンスでも実現できるよう進めていく予定です。タップダンスに似たシューズを履いて踊るフラメンコや、ドラム演奏でもこのJAMLIGHTは利用できると考えています。</p>
+    </div>
+
+  </main>
+
+  <footer>
+    <small>- ©︎ 2021 Koki Kiyota -</small>
+  </footer>
+
+</body>
+</html>

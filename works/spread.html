@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="CSS/spread_style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&=swap">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <title>spread-paint</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="menu">
+      <p><a href="../index.html">Koki Kiyota</a></p>
+      <p><a href="../about/about.html">About</a></p>
+      <p><a href="../index.html">Works</a></p>
+    </div>
+  </header>
+  
+  <main>
+    <div class="title">
+      <h1>spread-paint　<span class="ja">顔認識と水彩表現を用いた画像加工　　</span><span class="date">2021.12 ~ / 1 week</span></h1>
+      <p>Tools : TouchDesigner / OpenCV / Python / Premiere</p>
+    </div>
+
+    <div class="img">
+      <img
+        src="images/spread_main.jpg"
+        width="100%"
+        height="auto";>
+    </div>
+
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/MIhhJfig16o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="overview">
+      <h1>授業課題 / オマージュ作品製作</h1>
+      <p>アーティストの背景や思想、作品にどのような想いを込めて製作しているかを調査し、<span class="br">それを踏まえてオマージュ作品の製作を行う。</span></p>
+    </div>
+
+    <div class="intro">
+      <p>オマージュしたアーティスト</p>
+      <h1><a href="https://jeanfrancoislepage.com/" target="_blank">Jean-François Lepage</a><span class="ja">　　- Photographer -</span></h1>
+  
+      <p>1960年、フランスのパリに生まれる。20歳のときにファッションフォトグラファーのアシスタントとして活動し、2年ほどでプロカメラマンとして独立。数々の写真がファッション雑誌に掲載されるが、自分のやりたい方向と周りが求めていることのギャップを感じ、一度、現在のキャリアから離れてペインティングに専念するようになる。2014年、自身のアーカイブをふと見ると再び手を加えたくなるようなイメージがあることに気付き、写真にペイントを施すという自身のスタイルが確立。</p>
+
+    </div>
+
+    <div class="pic">
+      <img src="images/lepage_1.jpg">
+      <img src="images/lepage_2.jpg">
+      <img src="images/lepage_3.jpg">
+    </div>
+
+    <div class="comment">
+      <img
+        src="images/lepage_pic.jpg"
+        width="25%"
+        height="auto";>
+  
+      <div class="quote">
+        <blockquote>
+          <p>「世の中にはあまりにも完璧な男や女のイメージがあふれすぎていて、みんなお腹がいっぱいなんだ。その状態に慣れすぎていて、どれも記憶に残らない。どこかに不協和音を感じる方が記憶に残りやすい。」</p>
+          <p class="author">- Jean-François Lepage（IMA 2015 Autumn Vol.13 から抜粋）</p>
+        </blockquote>
+      </div>
+    </div>
+
+    <hr>
+    <div class="approach">
+      <h1>Approach</h1>
+      <h3>作品の特徴</h3>
+
+      <p class="chara">ルパージュは、写真に傷をつけたり大胆にペイントを施したり、意図的に不調和を生み出しています。この不調和によって被写体にある種の不在感を与え、鑑賞者の想像力とともに空想の世界へと引き込んでいます。また、人物写真の命ともいえる顔を大胆にペイントする事で、独特で魅力的な表情を映し出しています。</p>
+      <h2><span>水彩表現</span>を用いて不調和を生み出す。</h2>
+      <p>水彩表現特有の不規則に広がって混ざり合う様から、徐々に崩壊していく美しい儚さを見出しました。人物写真の崩壊の過程を映像として動的に表現、時間が経つにつれて不調和が生まれ、瞬間的な美しさの演出を試みます。</p>
+      <h2><span>顔は滲ませず</span>に原型を留める。</h2>
+      <p>写真が水彩のように崩壊していく中、顔だけは元の写真のまま残します。無秩序な写真からくっきりとした顔が浮かび上がり、さらにヴィヴィットなカラーペイントを施すことで、ルパージュらしさを追求します。</p>
+    </div>
+
+    <hr>
+    <div class="system">
+      <h1>System</h1>
+      <h2>TouchDesignerで実装、OpenCVを用いて顔認識</h2>
+      <p>TouchDesigner(以下TD)で水彩のように滲んでいくエフェクトを生成。顔の検出には、画像・映像処理のためのオープンソースライブラリであるOpenCVを用いて即座に顔の座標を検出。あらゆる画像に対してリアルタイムにエフェクトを付与する。
+      </p>
+    </div>
+
+    <div class="howto">
+
+      
+      <div class="steps">
+        <div class="step_1">
+          <img src="images/step_1.jpg">
+          <p>座標を少しずらした白いエッジをbgmのキック音に合せてランダムに描画。</p>   
+        </div>
+        <div class="step_2">
+          <img src="images/step_2.jpg">
+          <P>エッジと共に写真を水彩のように滲ませる。bgmに合わせて白いエッジが描画されることで躍動感を演出。</P>
+        </div>      
+      </div>
+      
+      
+      <img src="images/step_3.jpg">
+      <p>OpenCVで顔の座標とサイズを検出、顔だけのレイヤーを用意する。</p>
+      
+      <div class="steps">
+        <div class="step_4">
+          <img src="images/step_4.jpg">
+          <p>滲ませた写真に顔だけのレイヤーを重ねる。</p>
+        </div>
+        <div class="step_5">
+          <img src="images/spread_main.jpg">
+          <p>顔の位置に微細に揺れる楕円を描画して滲ませ、一番上のレイヤーに重ねる。</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <hr>
+
+    <div class="beforeafter">
+      <h1>Before and after</h1>
+      <div class="ba">
+        <img src="images/lepage_1_1.jpg">
+        <img src="images/spread_main.jpg">
+        <img src="images/lepage_2_1.jpg">
+        <img src="images/lepage_2_2.jpg">
+        <img src="images/lepage_3_1.jpg">
+        <img src="images/lepage_3_2.jpg">
+        <img src="images/lepage_4_1.jpg">
+        <img src="images/lepage_4_2.jpg">
+        <img src="images/lepage_5_1.jpg">
+        <img src="images/lepage_5_2.jpg">
+        <img src="images/lepage_6_1.jpg">
+        <img src="images/lepage_6_2.jpg">
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <small>- ©︎ 2021 Koki Kiyota -</small>
+  </footer>
+
+</body>
+</html>

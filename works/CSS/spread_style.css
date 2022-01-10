@@ -1,0 +1,334 @@
+/* common */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  color: #333;
+  width: 50vw;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+a {
+  color: #222;
+  text-decoration:none;
+}
+
+img {
+  vertical-align: bottom;
+  align-items: center;
+}
+
+.ja {
+  font-size: 70%;
+}
+
+.video {
+  height: 0;
+  position: relative;
+  padding-bottom: 56.25%;
+  margin-bottom: 2rem;
+}
+
+hr {
+  height: 1px;
+  margin: auto;
+  background-color: rgb(133, 133, 133);
+  border: none;
+}
+
+
+.video iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+
+
+/* header */
+
+/* menu */
+header .menu p {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  margin-left: 2em;
+}
+
+/* Koki Kiyota */
+header p:first-child {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-right: auto;
+  margin-left: 0;
+}
+
+header .menu {
+  display: flex;
+  justify-content: end;
+  margin-top: 6rem;
+  margin-bottom: 8rem;
+}
+
+
+
+
+
+/* main */
+
+main h1 {
+  font-size: 2.5rem;
+  /* font-weight: 500;  */
+}
+
+main p {
+  font-weight: 100;
+  line-height: 3rem;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+main .title {
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+main .title h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.date {
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: rgb(133, 133, 133);
+}
+
+main .title p {
+  color: rgb(133, 133, 133);;
+}
+
+main .overview {
+  margin-top: 16rem;
+  margin-bottom: 16rem;
+
+}
+main .img img {
+  margin-bottom: 1rem;
+}
+
+main .overview h1 {
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+}
+
+main .overview p {
+  font-size: 1.7rem;
+}
+
+main .overview .br {
+  display: inline-block;
+}
+
+main .intro p:first-child {
+  font-size: 1.7rem;
+  font-weight: 500;
+  margin-bottom: 0.3rem;
+}
+
+main .intro h1 {
+  margin-bottom: 1rem;
+}
+
+
+
+main .img {
+  text-align: center;
+}
+
+main .pic {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+  justify-content: center;
+}
+
+
+main .pic img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+
+}
+
+
+.quote {
+	position: relative;
+	width: 90%;
+	margin: 2em auto;
+}
+
+.quote blockquote {
+	margin: 0;
+	padding: 0.5em 1em;
+	text-indent: 1.5em;
+	color: #333333;
+	border-left: 2px solid #999999;
+}
+
+.quote blockquote:before,
+.quote blockquote:after {
+	position: absolute;
+	color: #999999;
+}
+.quote blockquote:before {
+  font-family:'Font Awesome 5 Free';
+	top: 1rem;
+	left: -0.5rem;
+	content: '\f10d';
+  font-weight: 900;
+}
+.quote blockquote:after {
+  font-family:'Font Awesome 5 Free';
+	right: 2.2rem;
+	bottom: 7rem;
+	content: '\f10e';
+  font-weight: 900;
+}
+
+.quote blockquote p.author {
+	margin: 0;
+	text-align: right;
+}
+
+main .comment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+main .comment img {
+  margin-right: 2rem;
+  justify-content: center;
+}
+
+
+main .approach h1,
+main .system h1 {
+  margin-top: 6rem;
+  margin-bottom: 3rem;
+}
+
+main .approach h2,
+main .approach h3 {
+  font-size: 1.8rem;
+  font-weight:  900;
+}
+
+main .approach .chara {
+  margin-bottom: 6rem;
+}
+
+main .approach span {
+  color:rgb(182, 79, 79);
+}
+
+main .approach {
+  margin-bottom: 6rem;
+}
+
+main .system h2 {
+  font-size: 1.8rem;
+}
+
+main .steps {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  justify-content: center;
+} 
+
+main .steps img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+main .howto {
+  margin-bottom: 4rem;
+}
+
+main .howto img {
+  width: 100%;
+  height: auto;
+}
+
+main .beforeafter h1 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+}
+
+main .ba {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  justify-content: center;
+}
+
+main .ba img {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+
+@media(max-width:900px) {
+  html {
+    font-size: 25%;
+  }
+  body {
+    width: 95vw;
+  }
+  main .title h1 {
+    width: 100%;
+  }
+  main p {
+    line-height: 4rem;
+  }
+  main .title .date {
+    display: inline-block;
+  }
+  .quote blockquote:after {
+    bottom: 11rem;
+  }
+}
+
+
+
+
+/* footer */
+footer {
+  margin-top: 12rem;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #aaa;
+}
