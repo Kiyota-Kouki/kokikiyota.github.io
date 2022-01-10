@@ -102,7 +102,7 @@ main section {
     grid-template-columns: 1fr;
   }
   header .menu {
-    justify-content: end;
+    text-align: right;
   }  
 }
 
