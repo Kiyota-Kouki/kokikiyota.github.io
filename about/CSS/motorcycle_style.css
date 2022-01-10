@@ -97,10 +97,16 @@ main .photos img {
 
 @media(max-width:900px) {
   html {
-    font-size: 30%;
+    font-size: 40%;
   }
   body {
-    width: 80vw;
+    width: 90vw;
+  }
+  main p {
+    line-height: 1.8rem;
+  }
+  main .photos {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
 }
 

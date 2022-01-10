@@ -233,14 +233,15 @@ main .history p {
 
 @media(max-width:900px) {
   html {
-    font-size: 25%;
+    font-size: 40%;
   }
   body {
-    width: 95vw;
+    width: 90vw;
   }
   main p {
-    line-height: 4rem;
+    line-height: 1.8rem;
   }
+  
   main .skills .groupe_1,
   main section {
     grid-template-columns: 1fr;
