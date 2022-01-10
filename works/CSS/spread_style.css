@@ -312,7 +312,7 @@ main .ba img {
     width: 100%;
   }
   main p {
-    line-height: 1rem;
+    line-height: 1.8rem;
   }
   main .title .date {
     display: inline-block;
