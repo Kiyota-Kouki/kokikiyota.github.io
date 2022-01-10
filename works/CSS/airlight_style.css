@@ -114,7 +114,7 @@ main .img {
 
 @media(max-width:900px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
   body {
     width: 90vw;
@@ -123,7 +123,7 @@ main .img {
     width: 100%;
   }
   main p {
-    line-height: 1.8rem;
+    line-height: 2.5rem;
   }
   main .title .date {
     display: inline-block;
