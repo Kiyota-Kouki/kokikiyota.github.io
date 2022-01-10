@@ -29,7 +29,7 @@ a {
 img {
   vertical-align: bottom;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .ja {
@@ -114,13 +114,16 @@ main .img {
 
 @media(max-width:900px) {
   html {
-    font-size: 30%;
+    font-size: 40%;
   }
   body {
-    width: 85vw;
+    width: 90vw;
   }
   main .title h1 {
     width: 100%;
+  }
+  main p {
+    line-height: 1.8rem;
   }
   main .title .date {
     display: inline-block;

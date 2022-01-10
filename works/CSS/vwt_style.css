@@ -221,7 +221,7 @@ main .background .ex {
 
 @media(max-width:900px) {
   html {
-    font-size: 30%;
+    font-size: 40%;
   }
   body {
     width: 90vw;
@@ -230,7 +230,7 @@ main .background .ex {
     width: 100%;
   }
   main p {
-    line-height: 2rem;
+    line-height: 1.8rem;
   }
   main .title .date {
     display: inline-block;

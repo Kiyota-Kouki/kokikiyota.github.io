@@ -29,7 +29,7 @@ a {
 img {
   vertical-align: bottom;
   align-items: center;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .ja {
@@ -115,10 +115,13 @@ main .img {
 
 @media(max-width:900px) {
   html {
-    font-size: 30%;
+    font-size: 40%;
   }
   body {
-    width: 80vw;
+    width: 90vw;
+  }
+  main p {
+    line-height: 1.8rem;
   }
 }
 
