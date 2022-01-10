@@ -90,7 +90,7 @@ main section {
 
 @media(max-width:900px) {
   html {
-    font-size: 40%;
+    font-size: 50%;
   }
   body {
     width: 90vw;
