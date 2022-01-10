@@ -243,7 +243,7 @@ main .point ul {
 
 @media(max-width:900px) {
   html {
-    font-size: 30%;
+    font-size: 35%;
   }
   body {
     width: 90vw;
@@ -252,7 +252,7 @@ main .point ul {
     width: 100%;
   }
   main p {
-    line-height: 2rem;
+    line-height: 1rem;
   }
   main .title .date {
     display: inline-block;
