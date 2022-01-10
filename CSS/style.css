@@ -93,7 +93,7 @@ main section {
     font-size: 30%;
   }
   body {
-    width: 80vw;
+    width: 90vw;
   }
   main section {
     grid-template-columns: 1fr;
