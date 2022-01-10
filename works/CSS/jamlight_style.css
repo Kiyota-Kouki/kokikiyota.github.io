@@ -243,7 +243,7 @@ main .point ul {
 
 @media(max-width:900px) {
   html {
-    font-size: 45%;
+    font-size: 50%;
   }
   body {
     width: 90vw;
