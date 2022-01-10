@@ -317,9 +317,9 @@ main .ba img {
   main .title .date {
     display: inline-block;
   }
-  .quote blockquote:after {
+  /* .quote blockquote:after {
     bottom: 11rem;
-  }
+  } */
 }
 
 
