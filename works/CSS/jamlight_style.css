@@ -252,7 +252,7 @@ main .point ul {
     width: 100%;
   }
   main p, main li {
-    line-height: 1rem;
+    line-height: 1.5rem;
   }
   main .title .date {
     display: inline-block;
