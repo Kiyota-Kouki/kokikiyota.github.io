@@ -224,13 +224,13 @@ main .background .ex {
     font-size: 25%;
   }
   body {
-    width: 95vw;
+    width: 90vw;
   }
   main .title h1 {
     width: 100%;
   }
   main p {
-    line-height: 4rem;
+    line-height: 2rem;
   }
   main .title .date {
     display: inline-block;
