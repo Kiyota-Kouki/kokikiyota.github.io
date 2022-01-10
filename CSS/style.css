@@ -1,0 +1,166 @@
+/* common */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #222;
+  text-decoration:none;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;;
+  margin: 0;
+  color: #333;
+  width: 60vw;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+img {
+  vertical-align: bottom;
+  align-items: center;
+}
+
+.ja {
+  font-size: 70%;
+  font-weight: 600;
+}
+
+
+/* header */
+
+header .menu p {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-left: 2em;
+}
+
+header .menu {
+  display: flex;
+  justify-content: end;
+  margin-top: 6rem;
+}
+
+
+header h1 {
+  font-weight: 500;
+  margin-bottom: 1.6rem;
+  font-size: 4rem;
+  text-align: center;
+  padding: 0;
+}
+
+header .name {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-top: 9rem;
+  text-align: center;
+}
+
+
+main .container .title  {
+  left: 0;
+}
+
+main .container .title h2 {
+  margin-top: 14rem;
+  margin-bottom: 3rem;
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 400;
+  /* display: inline; */
+  }
+
+main section {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, minmax(300px, 1fr));
+  justify-content: center;
+}
+
+@media(max-width:900px) {
+  html {
+    font-size: 30%;
+  }
+  body {
+    width: 80vw;
+  }
+  main section {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+section .works {
+  position: relative;
+  overflow: hidden;
+}
+
+main section .works img {
+  width: 100%;
+  height: auto;
+  transition: 0.6s;
+
+}
+
+main section .mask .explanation {
+  font-size: clamp(10px, 0.8vw, 15px);
+  font-weight: 300;
+  text-align: center;
+  padding: 0;
+  margin-top: 24.5%;
+  color: #eee;
+}
+
+main section .mask .explanation h3 {
+  font-size: clamp(15px, 0.8vw, 20px);
+  font-weight:700;
+}
+main section .mask .explanation p {
+  margin-top: 0.3rem;
+}
+/* main section .mask .pos {
+  outline: 2px solid skyblue;
+  display: flex;
+  align-items: center;
+} */
+
+section .mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color:	rgba(0, 0, 0, 0.6);
+	-webkit-transition:	all 0.3s ease;
+	transition:		all 0.3s ease;
+}
+
+section .works:hover .mask {
+  opacity: 1;
+}
+section .works:hover img {
+  transform: scale(1.1, 1.1);
+  transition: 0.6s all;
+}
+
+/* footer */
+
+footer {
+  margin-top: 120px;
+  text-align: center;
+  font-size: 1.7rem;
+  color: #aaa;
+}
