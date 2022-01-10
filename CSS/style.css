@@ -95,13 +95,11 @@ main section {
   body {
     width: 90vw;
   }
-  header .menu {
-    margin-top: 3rem;
-  }
   main section {
     grid-template-columns: 1fr;
   }
   header .menu {
+    margin-top: 3rem;
     text-align: right;
   }  
 }

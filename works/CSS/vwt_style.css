@@ -226,6 +226,9 @@ main .background .ex {
   body {
     width: 90vw;
   }
+  header .menu {
+    margin-top: 3rem;
+  }  
   main .title h1 {
     width: 100%;
   }

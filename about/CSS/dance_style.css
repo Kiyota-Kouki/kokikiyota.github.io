@@ -124,6 +124,9 @@ main .img {
   body {
     width: 90vw;
   }
+  header .menu {
+    margin-top: 3rem;
+  }
   main p {
     line-height: 2.5rem;
   }
