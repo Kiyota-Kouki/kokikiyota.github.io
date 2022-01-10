@@ -243,23 +243,24 @@ main .point ul {
 
 @media(max-width:900px) {
   html {
-    font-size: 25%;
+    font-size: 30%;
   }
   body {
-    width: 95vw;
+    width: 90vw;
   }
   main .title h1 {
     width: 100%;
   }
   main p {
-    line-height: 4rem;
+    line-height: 2rem;
   }
   main .title .date {
     display: inline-block;
   }
-  .quote blockquote:after {
-    bottom: 11rem;
+  .beside {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
+
 }
 
 
