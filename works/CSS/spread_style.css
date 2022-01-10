@@ -303,16 +303,16 @@ main .ba img {
 
 @media(max-width:900px) {
   html {
-    font-size: 25%;
+    font-size: 40%;
   }
   body {
-    width: 95vw;
+    width: 90vw;
   }
   main .title h1 {
     width: 100%;
   }
   main p {
-    line-height: 4rem;
+    line-height: 1rem;
   }
   main .title .date {
     display: inline-block;
