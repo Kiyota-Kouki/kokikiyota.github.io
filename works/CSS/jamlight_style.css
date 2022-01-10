@@ -251,7 +251,7 @@ main .point ul {
   main .title h1 {
     width: 100%;
   }
-  main p {
+  main p, main li {
     line-height: 1rem;
   }
   main .title .date {
