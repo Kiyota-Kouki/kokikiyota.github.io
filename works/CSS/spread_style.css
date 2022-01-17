@@ -47,6 +47,8 @@ hr {
   margin: auto;
   background-color: rgb(133, 133, 133);
   border: none;
+  margin-top: 14rem;
+  margin-bottom: 12rem;
 }
 
 
@@ -94,8 +96,8 @@ header .menu {
 /* main */
 
 main h1 {
-  font-size: 2.5rem;
-  /* font-weight: 500;  */
+  font-size: 3rem;
+  margin-bottom: 8rem;
 }
 
 main p {
@@ -232,11 +234,6 @@ main .comment img {
 }
 
 
-main .approach h1,
-main .system h1 {
-  margin-top: 6rem;
-  margin-bottom: 3rem;
-}
 
 main .approach h2,
 main .approach h3 {
@@ -282,10 +279,6 @@ main .howto img {
   height: auto;
 }
 
-main .beforeafter h1 {
-  margin-top: 6rem;
-  margin-bottom: 2rem;
-}
 
 main .ba {
   display: grid;

@@ -92,14 +92,24 @@ main .text {
 }
 
 main .text h1 {
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
+  font-size: 3rem;
+  margin-top: 12rem;
+  margin-bottom: 8rem;
 }
 
 main .text h2 {
   font-size: 1.8rem;
   margin-top: 3rem;
   margin-bottom: 1rem;
+}
+
+hr {
+  height: 1px;
+  margin: auto;
+  background-color: rgb(133, 133, 133);
+  border: none;
+  margin-top: 14rem;
+  margin-bottom: 12rem;
 }
 
 main p {

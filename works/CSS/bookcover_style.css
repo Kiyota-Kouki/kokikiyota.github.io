@@ -108,6 +108,15 @@ main p {
   line-height: 3rem;
 }
 
+hr {
+  height: 1px;
+  margin: auto;
+  background-color: rgb(133, 133, 133);
+  border: none;
+  margin-top: 14rem;
+  margin-bottom: 12rem;
+}
+
 main .img {
   text-align: center;
 }
