@@ -39,6 +39,10 @@ img {
 
 /* header */
 
+header {
+  margin-top: 6rem;
+}
+
 header .menu p {
   font-weight: 500;
   font-size: 2rem;
@@ -48,7 +52,6 @@ header .menu p {
 header .menu {
   display: flex;
   justify-content: end;
-  margin-top: 6rem;
 }
 
 
@@ -94,14 +97,12 @@ main section {
   body {
     width: 90vw;
   }
+  header {
+    margin-top: 3rem;
+  }
   main section {
     grid-template-columns: 1fr;
   }
-header .menu {
-  display: flex;
-  justify-content: end;
-  margin-top: 3rem;
-}
 }
 
 
