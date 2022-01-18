@@ -97,10 +97,11 @@ main section {
   main section {
     grid-template-columns: 1fr;
   }
-  header .menu {
-    margin-top: 3rem;
-    text-align: right;
-  }  
+header .menu {
+  display: flex;
+  justify-content: end;
+  margin-top: 3rem;
+}
 }
 
 
