@@ -78,7 +78,6 @@ main .container .title h2 {
   text-align: center;
   font-size: 2.2rem;
   font-weight: 400;
-  /* display: inline; */
   }
 
 main section {
@@ -167,4 +166,8 @@ footer {
   text-align: center;
   font-size: 1.7rem;
   color: #aaa;
+}
+
+footer .icon {
+  margin-bottom: 2rem;
 }
