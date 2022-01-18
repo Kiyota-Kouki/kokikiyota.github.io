@@ -142,6 +142,9 @@ main .philosophy {
   margin-right: auto;
 }
 
+main .philosophy p {
+  line-height: 5rem;
+}
 
 main section {
   display: grid;
