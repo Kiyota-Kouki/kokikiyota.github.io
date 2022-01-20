@@ -9,15 +9,15 @@
 }
 
 a {
-  color: #222;
+  color: #444;
   text-decoration:none;
 }
 
 body {
   font-family: 'Josefin Sans', sans-serif;;
   margin: 0;
-  color: #333;
-  width: 60vw;
+  color: #444;
+  width: 70vw;
   margin: 0 auto;
   margin-bottom: 4rem;
 }
@@ -39,10 +39,6 @@ img {
 
 /* header */
 
-header {
-  margin-top: 6rem;
-}
-
 header .menu p {
   font-weight: 500;
   font-size: 2rem;
@@ -52,6 +48,7 @@ header .menu p {
 header .menu {
   display: flex;
   justify-content: end;
+  margin-top: 6rem;
 }
 
 
@@ -65,7 +62,7 @@ header h1 {
 
 header .name {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   margin-top: 9rem;
   text-align: center;
 }
@@ -77,18 +74,48 @@ main .container .title  {
 
 main .container .title h2 {
   margin-top: 14rem;
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 400;
   }
 
-main section {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, minmax(300px, 1fr));
-  justify-content: center;
-}
+  .sort-btn {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 12rem;
+    margin-bottom: 3rem;
+  }
+  
+  .sort-btn li{
+    font-size: 1.7rem;
+    font-weight: 500;
+    list-style:none;
+    cursor: pointer;
+    margin: 1rem;
+  }
+  
+  .sort-btn li.active {/*ボタンに現在地＝activeというクラス名がついたら背景色を変更*/
+    text-decoration: underline;
+    text-decoration-color: #444;
+    text-decoration-thickness: 0.2rem;
+    text-underline-position: under;
+  }
+  
+  /*横幅が480px以下になった際の指定*/
+  @media only screen and (max-width: 480px) {
+    .sort-btn{
+      justify-content: space-between;
+    }
+    .sort-btn li {
+      width:48%;
+      margin:0 0 10px 0;
+      text-align:center;
+    }	
+  }
+
+  
 
 @media(max-width:900px) {
   html {
@@ -100,26 +127,19 @@ main section {
   header {
     margin-top: 3rem;
   }
-  main section {
-    grid-template-columns: 1fr;
+}
+
+
+
+
+  .works img,
+  .ith_works img {
+    transition: 0.6s;
   }
-}
 
 
 
-section .works {
-  position: relative;
-  overflow: hidden;
-}
-
-main section .works img {
-  width: 100%;
-  height: auto;
-  transition: 0.6s;
-
-}
-
-main section .mask .explanation {
+.mask .explanation {
   font-size: clamp(10px, 0.8vw, 15px);
   font-weight: 300;
   text-align: center;
@@ -128,20 +148,15 @@ main section .mask .explanation {
   color: #eee;
 }
 
-main section .mask .explanation h3 {
+.mask .explanation h3 {
   font-size: clamp(15px, 0.8vw, 20px);
   font-weight:700;
 }
-main section .mask .explanation p {
+.mask .explanation p {
   margin-top: 0.3rem;
 }
-/* main section .mask .pos {
-  outline: 2px solid skyblue;
-  display: flex;
-  align-items: center;
-} */
 
-section .mask {
+.mask {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -153,13 +168,80 @@ section .mask {
 	transition:		all 0.3s ease;
 }
 
-section .works:hover .mask {
+.works:hover .mask,
+.ith_works:hover .mask {
   opacity: 1;
 }
-section .works:hover img {
+.works:hover img,
+.ith_works:hover img {
   transform: scale(1.1, 1.1);
   transition: 0.6s all;
 }
+
+
+/*＝＝＝Muuriのレイアウトのための調整 */
+.grid {
+  position: relative;/*並び替えの基準点を指定*/
+}
+
+/*各画像の横幅などの設定*/
+.item {
+  display: block;
+  position: absolute;
+  width: 33.3%;/*横並びで3つ表示*/
+  z-index: 1;
+  list-style:none;
+}
+
+/*内側のボックスの高さが崩れないように維持*/
+.works {
+  position: relative;
+  overflow: hidden;
+  transition: 0.6s;
+  width: 100%;
+  height: 100%;
+}
+
+/*画像の横幅を100%にしてレスポンシブ化*/
+.grid img {
+  width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+.grid_2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item_2 {
+  width: 33.3%;
+  z-index: 1;
+  list-style: none;
+}
+
+.grid_2 img {
+  width:100%;
+  height:auto;
+  vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+
+/*横幅が768px以下になった際の指定*/
+@media only screen and (max-width: 768px) {
+.item,
+.item_2 {
+  width: 49.5%;/*横並びで2つ表示*/
+  }
+}
+@media only screen and (max-width: 500px) {
+.item {
+  width: 100%;
+  }
+.item_2 {
+  width: 100%;
+}
+}
+
+
 
 /* footer */
 
