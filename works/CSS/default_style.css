@@ -40,7 +40,7 @@ img {
   height: 0;
   position: relative;
   padding-bottom: 56.25%;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 
@@ -53,6 +53,13 @@ img {
   right: 0;
   top: 0;
   bottom: 0;
+}
+
+.beside {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(300px, 1fr));
+  justify-content: center;
 }
 
 /* header */
@@ -135,6 +142,9 @@ main .img {
   }
   main p {
     line-height: 2.5rem;
+  }
+  .beside {
+    grid-template-columns: repeat(1, minmax(300px, 1fr));
   }
 }
 
