@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="CSS/covid-19_style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&=swap">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+  <title>COVID-19 Infographics</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="menu">
+      <p><a href="../index.html">Koki Kiyota</a></p>
+      <p><a href="../about/about.html">About</a></p>
+      <p><a href="../index.html">Works</a></p>
+    </div>
+  </header>
+  
+  <main>
+    <div class="title">
+      <h1>COVID-19 Infographics　<span class="ja">新型コロナ感染者数推移の視覚化　　</span><span class="date">2022.01 ~ / 3 days</span></h1>
+      <p>Tools : TouchDesigner / Premiere</p>
+    </div>
+
+    <div class="img">
+      <img
+        src="images/covid-19_main.jpg"
+        width="100%"
+        height="auto";>
+    </div>
+
+    <h2>日本の2年間（2020.1.16 ~ 2022.1.20）の新型コロナ感染者数推移を視覚化</h2>
+    <p>感染者数の2年間の推移をインフォグラフィックスとしてまとめました。情報を視覚化することで、数字だけでは伝わりずらい感染力の凄まじさを体感することができます。</p>
+
+    <div class="video">
+      <iframe src="https://www.youtube.com/embed/CJzIeUjaPro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <hr>
+
+    <div class="background">
+      <h1>Background</h1>
+      <p>情報を視覚化するインフォグラフィックスは、数字だけでは伝えられない情報を視覚的に表現することができます。今日では、毎日のように新型コロナウイルスの感染者数が発表されていますが、その状況に慣れて気が緩んでしまっていると言っても否めません。そこで、感染者数の推移を視覚化して、感染力の強さや地域ごとの感染者数の差、第何波と言われる流行はどれほどの規模なのか、1分間の動画でわかりやすく表現しました。
+      </p>
+      </div>
+
+
+    </div>
+
+    <hr>
+
+    <div class="system">
+      <h1>System</h1>
+      <h2>TouchDesignerで実装</h2>
+      <p>2年間の都道府県ごとの感染者数がまとめられたCSVファイルをTouchDesignerで開き、都道府県ごとの人数で感染者数を表す球体のサイズを制御。また、都道府県の座標データをまとめたCSVファイルを用いて、TouchDesignerの3次元座標にマッピングする。</p>
+      <img
+        src="images/Infographics_system.jpg"
+        width="100%"
+        height="auto";>
+    </div>
+
+   
+      <hr>
+
+      <div class="programming">
+        <h1>Programming</h1>
+        <h2>全体図</h2>
+        <img
+          src="images/covid_programming.jpg"
+          width="100%"
+          height="auto";>  
+        <h2>Instancing</h2>
+        <p>各都道府県の1日の感染者数をグラフ化し、球体のサイズにインスタンシングする。</p>
+        <img
+          src="images/people.jpg"
+          width="100%"
+          height="auto";>
+
+        <h2>Geometry</h2>
+        <p>地球の3Dデータから日本だけを抽出してカラーを分ける。</p>
+        <img
+          src="images/geo.jpg"
+          width="100%"
+          height="auto";>
+      </div>
+  
+      
+    
+
+    </div>
+
+  </main>
+
+  <footer>
+    <small>- ©︎ 2021 Koki Kiyota -</small>
+  </footer>
+
+</body>
+</html>

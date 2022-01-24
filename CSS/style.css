@@ -101,21 +101,7 @@ main .container .title h2 {
     text-decoration-color: #444;
     text-decoration-thickness: 0.2rem;
     text-underline-position: under;
-  }
-  
-  /*横幅が480px以下になった際の指定*/
-  /* @media only screen and (max-width: 480px) {
-    .sort-btn{
-      justify-content: space-between;
-    }
-    .sort-btn li {
-      width:20%;
-      margin:0 0 10px 0;
-      text-align:center;
-    }	
-  } */
-
-  
+  }  
 
 @media(max-width:900px) {
   html {
@@ -198,8 +184,6 @@ main .container .title h2 {
   position: relative;
   overflow: hidden;
   transition: 0.6s;
-  width: 100%;
-  height: 100%;
 }
 
 /*画像の横幅を100%にしてレスポンシブ化*/
@@ -208,6 +192,8 @@ main .container .title h2 {
   height:auto;
   vertical-align: bottom;/*画像の下にできる余白を削除*/
 }
+
+
 .grid_2 {
   display: flex;
   flex-wrap: wrap;
