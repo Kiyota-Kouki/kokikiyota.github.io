@@ -103,18 +103,6 @@ main .container .title h2 {
     text-underline-position: under;
   }  
 
-@media(max-width:900px) {
-  html {
-    font-size: 50%;
-  }
-  body {
-    width: 90vw;
-  }
-  header {
-    margin-top: 3rem;
-  }
-}
-
 
 
 
@@ -174,7 +162,7 @@ main .container .title h2 {
 .item {
   display: block;
   position: absolute;
-  width: 33.3%;/*横並びで3つ表示*/
+  width: 33%;/*横並びで3つ表示*/
   z-index: 1;
   list-style:none;
 }
@@ -213,11 +201,21 @@ main .container .title h2 {
 
 /*横幅が768px以下になった際の指定*/
 @media only screen and (max-width: 768px) {
-.item,
-.item_2 {
-  width: 49.5%;/*横並びで2つ表示*/
+  html {
+    font-size: 50%;
   }
-}
+  body {
+    width: 90vw;
+  }
+  header {
+    margin-top: 3rem;
+  }
+  .item,
+  .item_2 {
+    width: 49.5%;/*横並びで2つ表示*/
+    }
+  }
+
 @media only screen and (max-width: 500px) {
 .item {
   width: 100%;
