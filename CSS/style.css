@@ -162,7 +162,7 @@ main .container .title h2 {
 .item {
   display: block;
   position: absolute;
-  width: 33%;/*横並びで3つ表示*/
+  width : calc(100% / 3) ;
   z-index: 1;
   list-style:none;
 }
