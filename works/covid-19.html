@@ -25,34 +25,46 @@
   <header>
     <div class="menu">
       <p><a href="../index.html">Koki Kiyota</a></p>
-      <p><a href="../about/about.html">About</a></p>
       <p><a href="../index.html">Works</a></p>
+      <p><a href="../about/about.html">About</a></p>
     </div>
   </header>
   
   <main>
-    <div class="title">
-      <h1>COVID-19 Infographics　<span class="ja">新型コロナ感染者数推移の視覚化　　</span><span class="date">2022.01 ~ / 3 days</span></h1>
-      <p>Tools : TouchDesigner / Premiere</p>
-    </div>
-
-    <div class="img">
-      <img
+    <div class="main_page">
+      <div class="title">
+        <h1>COVID-19 Infographics</h1>
+        <h2>新型コロナ感染者数推移の視覚化</h2>
+        <div class="remarks">
+          <section>
+            <p>Dates</p>
+            <p>2022.01 ~ / 3 days</p>
+          </section>
+          <section>
+            <p>Tools</p>
+            <p>Tools : TouchDesigner / Premiere</p>
+          </section>
+        </div>
+      </div>   
+        <img
         src="images/covid-19_main.jpg"
-        width="100%"
+        width="70%"
         height="auto";>
     </div>
-
-    <h2>日本の2年間（2020.1.16 ~ 2022.1.20）の新型コロナ感染者数推移を視覚化</h2>
-    <p>感染者数の2年間の推移をインフォグラフィックスとしてまとめました。情報を視覚化することで、数字だけでは伝わりずらい感染力の凄まじさを体感することができます。</p>
-
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/CJzIeUjaPro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video_set">
+        <iframe src="https://www.youtube.com/embed/CJzIeUjaPro" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
     </div>
-    <hr>
 
+    <h1 class="subtitle">Overview</h1>
+    <div class="outline">
+      <h1>日本の2年間（2020.1.16 ~ 2022.1.20）の新型コロナ感染者数推移を視覚化</h1>
+    </div>
+
+
+    <h1 class="subtitle">Background</h1>
     <div class="background">
-      <h1>Background</h1>
       <p>情報を視覚化するインフォグラフィックスは、数字だけでは伝えられない情報を視覚的に表現することができます。今日では、毎日のように新型コロナウイルスの感染者数が発表されていますが、その状況に慣れて気が緩んでしまっていると言っても否めません。そこで、感染者数の推移を視覚化して、感染力の強さや地域ごとの感染者数の差、第何波と言われる流行はどれほどの規模なのか、1分間の動画でわかりやすく表現しました。
       </p>
       </div>
@@ -60,23 +72,16 @@
 
     </div>
 
-    <hr>
-
+    <h1 class="subtitle">System</h1>
     <div class="system">
-      <h1>System</h1>
-      <h2>TouchDesignerで実装</h2>
-      <p>2年間の都道府県ごとの感染者数がまとめられたCSVファイルをTouchDesignerで開き、都道府県ごとの人数で感染者数を表す球体のサイズを制御。また、都道府県の座標データをまとめたCSVファイルを用いて、TouchDesignerの3次元座標にマッピングする。</p>
       <img
         src="images/Infographics_system.jpg"
         width="100%"
         height="auto";>
     </div>
 
-   
-      <hr>
-
+      <h1 class="subtitle">Programming</h1>
       <div class="programming">
-        <h1>Programming</h1>
         <h2>全体図</h2>
         <img
           src="images/covid_programming.jpg"

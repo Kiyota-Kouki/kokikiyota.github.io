@@ -25,34 +25,48 @@
   <header>
     <div class="menu">
       <p><a href="../index.html">Koki Kiyota</a></p>
-      <p><a href="../about/about.html">About</a></p>
       <p><a href="../index.html">Works</a></p>
+      <p><a href="../about/about.html">About</a></p>
     </div>
   </header>
   
   <main>
-    <div class="title">
-      <h1>Virtual Weather Tree　<span class="ja">現実の天候とリンクした仮想空間　　</span><span class="date">2021.04 ~ / 1 month</span></h1>
-      <p>Tools : TouchDesigner / Open Weather Map / Python / Illustrator / Photoshop / Premiere</p>
-    </div>
-
-    <div class="img">
-      <img
+    <div class="main_page">
+      <div class="title">
+        <h1>Virtual Weather Tree</h1>
+        <h2>現実の天候とリンクした仮想空間</h2>
+        <div class="remarks">
+          <section>
+            <p>Dates</p>
+            <p>2021.04 ~ / 1 month</p>
+          </section>
+          <section>
+            <p>Tools</p>
+            <p>TouchDesigner / Open Weather Map / Python / Illustrator / Photoshop / Premiere</p>
+          </section>
+        </div>
+      </div>    
+        <img
         src="images/vwt_main.jpg"
         width="100%"
         height="auto";>
     </div>
-
-    <h2>現実の天候とリンクした仮想空間</h2>
-    <p>天気APIのOpen Weather Mapを用いて現在地の天候情報を取得。TouchDesignerで製作した仮想空間に天気APIのデータに基づいた様々な天候を加えることで、現実とリンクした空間を実現しました。virtualの”木”を見ることで実際の外の状況を一目で確認できます。</p>
-
     <div class="video">
-      <iframe src="https://www.youtube.com/embed/RIfZumuCTCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="video_set">
+        <iframe src="https://www.youtube.com/embed/RIfZumuCTCI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>  
     </div>
-    <hr>
+    <h1 class="subtitle">Overview</h1>
+    <div class="overview">
 
+      <h1>現実の天候とリンクした仮想空間</h1>
+      <p>天気APIのOpen Weather Mapを用いて現在地の天候情報を取得。TouchDesignerで製作した仮想空間に天気APIのデータに基づいた様々な天候を加えることで、現実とリンクした空間を実現しました。virtualの”木”を見ることで実際の外の状況を一目で確認できます。</p>
+    </div>
+      
+      
+
+    <h1 class="subtitle">Background</h1>
     <div class="background">
-      <h1>Background</h1>
       <p>現実の天候を知りたい時、テレビやアプリで調べるより実際に窓を開けて外を見た方が詳細に状況を知ることができます。水たまりが雨で揺れていたり、風で木がなびいていたり、外の状況から得られる視覚情報は天候を事細かに伝えてくれます。そこで、現在の天候とリンクした仮想空間を製作しました。外と同じ景色をデジタルで再現することで室内のどんな場所でも現在の天候を体感することができます。</p>
 
       <div>
@@ -66,82 +80,80 @@
           height="auto";>
         </div>
       </div>
-
-
     </div>
 
-    <hr>
 
+
+    <h1 class="subtitle">System</h1>
     <div class="system">
-      <h1>System</h1>
       <h2>TouchDesignerと天気APIで実装</h2>
       <p>天気APIのOpen Weather Mapで得られるデータのうち、「天気」「降水量」「風速」の3つのデータをTouchDesignerのパラメータに紐付けて操作する。</p>
+      
+      <div class="weather">
+        <h2>天気</h2>
+        <p>天気に応じて背景画像をスイッチング</p>
+        <div>
+          <div>
+            <img
+            src="images/vwt_main.jpg"
+            width="100%"
+            height="auto";>
+            <p>晴れ</p>
+          </div>
+          <div>
+            <img
+            src="images/rain_1.jpg"
+            width="100%"
+            height="auto";>
+            <p>雨</p>
+          </div>
+        </div>
+        <h2>降水量</h2>
+        <p>降水量でパーティクルの量をコントロール</p>
+        <div>
+          <div>
+            <img
+            src="images/rain_1.jpg"
+            width="100%"
+            height="auto";>
+            <p>降水量：2.5mm</p>
+          </div>
+          <div>
+            <img
+            src="images/rain_2.jpg"
+            width="100%"
+            height="auto";>
+            <p>降水量：10.3mm</p>
+          </div>
+        </div>
+        <h2>風速</h2>
+        <p>風速に応じて枝先の葉っぱの揺れ幅が変化</p>
+        <div>
+          <div>
+            <img
+            src="images/leaves.jpg"
+            width="100%"
+            height="auto";>
+          </div>
+        </div>
+      </div>
     </div>
+      
 
-    <div class="weather">
-      <h2>天気</h2>
-      <p>天気に応じて背景画像をスイッチング</p>
-      <div>
-        <div>
-          <img
-          src="images/vwt_main.jpg"
-          width="100%"
-          height="auto";>
-          <p>晴れ</p>
-        </div>
-        <div>
-          <img
-          src="images/rain_1.jpg"
-          width="100%"
-          height="auto";>
-          <p>雨</p>
-        </div>
-      </div>
-      <h2>降水量</h2>
-      <p>降水量でパーティクルの量をコントロール</p>
-      <div>
-        <div>
-          <img
-          src="images/rain_1.jpg"
-          width="100%"
-          height="auto";>
-          <p>降水量：2.5mm</p>
-        </div>
-        <div>
-          <img
-          src="images/rain_2.jpg"
-          width="100%"
-          height="auto";>
-          <p>降水量：10.3mm</p>
-        </div>
-      </div>
-      <h2>風速</h2>
-      <p>風速に応じて枝先の葉っぱの揺れ幅が変化</p>
-      <div>
-        <div>
-          <img
-          src="images/leaves.jpg"
-          width="100%"
-          height="auto";>
-        </div>
-      </div>
-    </div>
-
-      <hr>
-
+      
+    <h1 class="subtitle">Programming</h1>
       <div class="programming">
-        <h1>Programming</h1>
         <h2>天気API</h2>
         <p>Open Weather Mapで現在地の天気データのURLを取得、TouchDesignerのwebclient DATを用いてjsonデータを受け取る。受け取ったデータには全ての天気情報が存在するので、整理してそれぞれを抽出している。データのリクエストはTimer CHOPで1時間に1回行っている。</p>
         <img
-          src="images/json.jpg"
-          width="100%"
-          height="auto";>
+        src="images/json.jpg"
+        width="100%"
+        height="auto";>
         
         <h2>Modeling</h2>
         <p>木のモデリングには、植物の成長プロセスを初めとした自然物の構造を記述するアルゴリズムであるL-systemを用いて、木のボディと枝先をそれぞれ作成して組み合わせた。</p>
         <img
-          src="images/lsystem.jpg"
+        src="images/lsystem.jpg"
           width="100%"
           height="auto";>
 
