@@ -226,12 +226,19 @@ ul {
 /* footer */
 
 footer {
-  margin-top: 120px;
+  margin-top: 12rem;
   text-align: center;
   font-size: 1.7rem;
   color: #aaa;
 }
 
 footer .icon {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 2rem;
+}
+
+footer .icon img {
+  margin: 1rem;
 }
