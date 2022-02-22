@@ -158,13 +158,17 @@ main .container .title h2 {
   position: relative;/*並び替えの基準点を指定*/
 }
 
+ul {
+  margin-left: 1rem;
+}
+
 /*各画像の横幅などの設定*/
 .item {
   display: block;
   position: absolute;
-  width : calc(100% / 3) ;
+  width : 33%;
   z-index: 1;
-  list-style:none;
+  list-style: none;
 }
 
 /*内側のボックスの高さが崩れないように維持*/
@@ -188,7 +192,7 @@ main .container .title h2 {
 }
 
 .item_2 {
-  width: 33.3%;
+  width: 33%;
   z-index: 1;
   list-style: none;
 }
@@ -200,29 +204,21 @@ main .container .title h2 {
 }
 
 /*横幅が768px以下になった際の指定*/
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 50%;
-  }
-  body {
-    width: 90vw;
-  }
-  header {
-    margin-top: 3rem;
-  }
-  .item,
-  .item_2 {
-    width: 49.5%;/*横並びで2つ表示*/
-    }
-  }
+
 
 @media only screen and (max-width: 500px) {
-.item {
-  width: 100%;
+  body{
+    width : 90vw;
   }
-.item_2 {
-  width: 100%;
-}
+  ul {
+    margin : 0;
+  }
+  .item {
+    width: 100%;
+    }
+  .item_2 {
+    width: 100%;
+  }
 }
 
 
