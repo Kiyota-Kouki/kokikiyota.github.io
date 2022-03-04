@@ -156,9 +156,13 @@ main p {
   margin-bottom: 0.1rem;
 }
 
-.remarks section:first-child {
+.remarks section {
   margin-bottom: 2rem;
 }
+.remarks section:last-child {
+  margin-bottom: 0;
+}
+
 
 .overview,
 .approach,
