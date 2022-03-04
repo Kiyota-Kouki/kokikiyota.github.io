@@ -195,6 +195,12 @@ ul {
   list-style: none;
 }
 
+.item_3 {
+  width: 99%;
+  z-index: 1;
+  list-style: none;
+}
+
 .grid_2 img {
   width:100%;
   height:auto;
@@ -215,6 +221,9 @@ ul {
     width: 100%;
     }
   .item_2 {
+    width: 100%;
+  }
+  .item_3 {
     width: 100%;
   }
 }
