@@ -76,7 +76,6 @@ span {
   margin-left: auto;
   margin-right: auto;
 }
-
 /* header */
 
 /* menu */
@@ -175,13 +174,35 @@ main p {
   margin-bottom: 25rem;
 }
 
-.purpose {
-  margin-top: 16rem;
+.bc_overview .subtitle, 
+.bc_purpose .subtitle {
+  color: #F4F5F7;
 }
 
-.purpose h1 {
-  margin-bottom: 4rem;
+.overview p,
+.purpose p {
+  padding-bottom: 9rem;
+  color: #F4F5F7;
 }
+.overview h1,
+.purpose h1 {
+  font-size: 4rem;
+  color: #F4F5F7;
+}
+
+
+.bc_overview {
+  position: relative;
+  background-color: #3a4750;
+  padding-top: 7rem;
+}
+
+.bc_purpose {
+  position: relative;
+  background-color: #ec625f;
+  padding-top: 7rem;
+}
+
 .video,
 .programming,
 .homage,
@@ -203,8 +224,8 @@ main p {
 .columns_2 {
   display: flex;
   justify-content: space-between;
-  gap: 6rem;
-  margin-bottom: 6rem;
+  gap: 8rem;
+  margin-bottom: 12rem;
 }
 
 .columns_2 img {
@@ -218,7 +239,7 @@ main p {
 
 .columns_2 .text h2 {
   font-size: 3.2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
 .approach .items {
