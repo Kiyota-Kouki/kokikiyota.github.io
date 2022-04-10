@@ -40,6 +40,11 @@ span {
   font-size: 70%;
 }
 
+.movie_of_denoise {
+  margin-left: auto;
+  margin-right: auto;
+  width: 65vw;
+}
 .video {
   height: 0;
   position: relative;
