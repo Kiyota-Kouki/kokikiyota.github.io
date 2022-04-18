@@ -176,10 +176,37 @@ main p {
   margin-bottom: 25rem;
 }
 
+.overview h1 {
+  font-size: 3.6rem;
+  letter-spacing: 0.4rem;
+  text-align: center;
+}
+
+.overview p {
+  width: 41vw;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
 main .background div {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(2, minmax(100px, 1fr));
+  margin-bottom: 8rem;
+}
+
+.background p {
+  width: 45vw;
+  font-size: 1.7rem;
+  line-height: 4rem;
+  font-weight: 600;
+  margin-left: auto;
+  margin-right: auto;
+
 }
 
 main .weather h2 {
